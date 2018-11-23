@@ -1,11 +1,9 @@
 //引入axios
 import Vue from "vue"
 import axios from "axios"
-import {Toast,Header,Button } from "mint-ui"
+import {Toast} from "mint-ui"
 import "mint-ui/lib/style.css"
 Vue.component(Toast.name, Toast)
-Vue.component(Header.name, Header)
-Vue.component(Button.name, Button)
 axios.interceptors.request.use(//header拦截器
     // 在发送请求之前做些什么
     config => {
