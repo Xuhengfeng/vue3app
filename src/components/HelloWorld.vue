@@ -21,6 +21,7 @@ export default {
   },
   methods: {
     test(){
+      this.loading.open('加载中')
       this.$toast({
         message: "http版本不支持该请求",
         position: "bottom"
